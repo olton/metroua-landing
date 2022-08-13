@@ -1,0 +1,20 @@
+{
+  "name": "metro4-korzh",
+  "version": "0.1.0",
+  "license": "MIT",
+  "source": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "clear": "shx rm -rf dist/* lib/*",
+    "prebuild": "npm run clear",
+    "build": "parcel build --public-url ./",
+    "start": "parcel"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2",
+    "shx": "^0.3.4"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

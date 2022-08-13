@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --brand-color: #067bb6;
+}
+
+.fg-brand {
+    color: var(--brand-color) !important;
+}
+.bg-brand {
+    background: var(--brand-color) !important;
+}
+
+.about-block {
+    background: var(--brand-color) url("../images/a-blue.svg") top left no-repeat!important;
+    background-size: cover!important;
+}
+
+.app-bar-menu {
+    li:not(.no-hover) {
+        &:hover {
+            background: var(--brand-color)!important;
+            color: #fff!important;
+        }
+    }
+}
+
+footer {
+    background: #2f353b;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0 10px;
+}
+
+#social-menu, #footer-menu {
+    a {
+        color: #fff !important;
+    }
+    .bottom-links {
+        a {
+            color: #fefefe!important;
+        }
+    }
+}
+
+.work-box {
+    height: 300px;
+    overflow: hidden;
+}
+
+.work-box {
+    max-height: 260px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px #a9a4a4;
+    transition: transform .1s linear;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
+
+.price {
+    font-size: 48px;
+}
+.hours-count {
+    font-size: 28px;
+}
+
+.price-table {
+    margin: 40px 0;
+    td:not(:nth-child(1)) {
+        text-align: center;
+        width: 220px;
+    }
+    tr:nth-child(odd){
+        background: #ffffff!important;
+    }
+}
+
+.scrollable-container {
+    overflow-x: auto;
+    table {
+        width: auto!important;
+        min-width: 100%;
+    }
+}
+
+.korzh-footer-list-horizontal {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+
+    li {
+        padding: 4px 0 10px;
+        margin: 0 10px;
+        &:nth-child(1) {
+            margin-left: 0!important;
+        }
+        &:nth-last-child {
+            margin-right: 0!important;
+        }
+    }
+    a {
+        font-size: 12px;
+        font-weight: 400;
+        color: #b1bcc9;
+        text-transform: uppercase;
+        text-decoration: none!important;
+        &:hover {
+            color: #fff!important;
+        }
+    }
+}
+
+footer {
+    .secondary-text {
+        color: #b1bcc9!important;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+}
